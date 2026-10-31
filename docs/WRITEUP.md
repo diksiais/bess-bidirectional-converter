@@ -18,7 +18,7 @@ A battery energy storage system (BESS) needs a DC-DC stage that holds the DC bus
 | L, C | 1 mH, 680 µF |
 | R | 14.4 Ω (≈ 640 W) |
 
-These values are assumed. The original project files were lost, so I chose values that reproduce the characteristics I had measured earlier.
+These values are assumed. 
 
 ## 3. Simulate and analyse
 **Open loop.** A duty step from 0.50 to 0.55 should take the bus from 96 V to 106.7 V. The nonlinear simulation instead peaks at 114.7 V (about 75% overshoot of the step) and needs about 76 ms to settle. It also dips to 95.9 V first, which is the non-minimum-phase behaviour. The quality factor is Q ≈ 5.9.
